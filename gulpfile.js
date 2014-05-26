@@ -17,7 +17,17 @@ gulp.task('default', function () {
 
 
 gulp.task('svg', function() {
-    return gulp.src('.source/svg/**/*.svg')
-        .pipe(svgmin())
+    return gulp.src('./source/svg/**/*.svg')
+        .pipe(svgmin(
+          [{
+            //removeViewBox: true, // we mostly want preserved dimensions */
+            //removeComments:true,
+            //cleanupNumericValues:true,
+            // removeEmptyAttrs:true,
+            //removeMetadata:true,
+            // removeHiddenElems:true,
+            // removeUnusedNS:true,
+            // removeUselessStrokeAndFill:true
+          }]))
         .pipe(gulp.dest('./dist'));
 });

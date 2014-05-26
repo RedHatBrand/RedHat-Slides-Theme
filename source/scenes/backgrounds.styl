@@ -1,14 +1,11 @@
-.bg-clouds-light,
-.bg-clouds-dark
-  background-url https://d3s84xo5cmutkt.cloudfront.net/assets/attachments/000/000/707/original/clouds-grey-web.jpg
-
-.bg-clouds-light
-  wash grey +10%
-.bg-clouds-dark
-  wash black
-
-
 .slide-background
-  wash slate -20%
-section
-  foreground light-orange
+  &.bg-clouds, &.bg-clouds-light, &.bg-clouds-dark
+    background-image: url(https://d3s84xo5cmutkt.cloudfront.net/assets/attachments/000/000/707/original/clouds-grey-web.jpg);
+
+  &.bg-road, &.bg-road-dark, &.bg-road-light
+    background-image url(https://d3s84xo5cmutkt.cloudfront.net/assets/attachments/000/000/922/original/road-grey-web.jpg)
+
+  &.bg-road-light,  &.bg-clouds-light
+    wash grey +10%
+  &.bg-road-dark,  &.bg-clouds-dark
+    wash black

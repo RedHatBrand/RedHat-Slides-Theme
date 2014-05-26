@@ -1,0 +1,88 @@
+.progress span {
+  background-color: #f00;
+  border-radius: 0 2px 2px 0;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.controls {
+  z-index: 1;
+  bottom: auto;
+}
+section {
+  text-align: left;
+  letter-spacing: 0.061em;
+}
+section h1 {
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  font-size: 64px !important;
+}
+section h2 {
+  font-size: 36px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.15em !important;
+}
+section h3 {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  letter-spacing: 0.17em !important;
+}
+section > ul > li {
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+blockquote {
+  font-style: normal;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #5e6a71;
+  color: #d7d9d8;
+  color: #fff;
+  padding: 1.5em;
+}
+blockquote .icon.stroked {
+  stroke: #fff;
+}
+blockquote svg.product,
+blockquote .redhat-product-logotype {
+  fill: #fff;
+}
+blockquote position:relative:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  color: #5e6a71;
+  position: absolute;
+  right: 1em;
+  bottom: -1.3em;
+  border: 1em solid;
+  z-index: -1;
+  border-width: 2em 2.5em 0em 0em;
+  border-color: #5e6a71 transparent transparent;
+}
+.slide-background:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e6a71;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+section {
+  color: #ffb612;
+}
+section .icon.stroked {
+  stroke: #ffb612;
+}
+section svg.product,
+section .redhat-product-logotype {
+  fill: #ffb612;
+}

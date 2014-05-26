@@ -1,0 +1,21 @@
+blockquote
+  font-style normal
+  box-shadow none
+  background-color slate
+  color grey + 12%
+  foreground white
+  padding  1.5em
+  position:relative
+    &:after
+      content ""
+      display block
+      height:0
+      width:0
+      color: slate
+      position:absolute
+      right: 1em;
+      bottom:-1.3em;
+      border: 1em solid
+      z-index:-1
+      border-width:2em 2.5em 0em 0em
+      border-color: slate transparent transparent

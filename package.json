@@ -11,7 +11,7 @@
     "gulp"
   ],
   "author": "Andy Fitzsimon",
-  "license": "MIT",
+  "license": "private",
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-autoprefixer": "0.0.7",

@@ -7,9 +7,10 @@ var minifyCSS = require('gulp-minify-css');
 
 // Get and render all .styl files recursively
 gulp.task('default', function () {
-  gulp.src('./source/**/*.styl')
+  //gulp.src('./source/**/*.styl')
+  gulp.src('./source/index.styl')
     .pipe(stylus({use: [nib()]}))
     .pipe(prefix())
-    .pipe(minifyCSS())
+    //.pipe(minifyCSS())
     .pipe(gulp.dest('./dist'));
 });

@@ -1,5 +1,7 @@
-section
-  transition: all .5s ease
-
-.slide-background
-  transition all .5s ease
+/*defaults*/
+section, .slide-background
+  transition: all .5s ease !important /*slides requires important*/
+  &.future
+    transform translate (100% 0)
+  &.past
+    transform translate (-100% 0)

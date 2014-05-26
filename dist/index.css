@@ -103,3 +103,21 @@ blockquote position:relative:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
 }
+section,
+.slide-background {
+  -webkit-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+/*slides requires important*/
+}
+section.future,
+.slide-background.future {
+  -webkit-transform: translate 100% 0;
+  -ms-transform: translate 100% 0;
+  transform: translate 100% 0;
+}
+section.past,
+.slide-background.past {
+  -webkit-transform: translate -100% 0;
+  -ms-transform: translate -100% 0;
+  transform: translate -100% 0;
+}

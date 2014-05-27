@@ -21,13 +21,13 @@ gulp.task('svg', function() {
         .pipe(svgmin(
           [{
             //removeViewBox: true, // we mostly want preserved dimensions */
-            //removeComments:true,
-            //cleanupNumericValues:true,
-            // removeEmptyAttrs:true,
-            //removeMetadata:true,
-            // removeHiddenElems:true,
-            // removeUnusedNS:true,
-            // removeUselessStrokeAndFill:true
+            removeComments:true,
+            cleanupNumericValues:true,
+            convertTransform:true,
+            removeMetadata:true,
+            removeHiddenElems:true,
+            removeUnusedNS:true,
+            removeUselessStrokeAndFill:true
           }]))
         .pipe(gulp.dest('./dist'));
 });
